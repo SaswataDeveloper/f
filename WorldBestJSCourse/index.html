@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body {
+        background-color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Welcome to world best Javascript Course</h1> -->
+    <!-- inline style  -->
+    <!-- <button onclick="document.getElementById('demo').innerHTML= Date();">please click this button</button> -->
+
+
+    <!-- <button id="btt">click me</button>
+
+    <p id="demo"></p> -->
+
+    <!-- internal style  -->
+    <!-- <script>
+      alert("Welcome, eoseo");
+      console.log("Plz subscribe, like share & comment ");
+    </script>
+    <script src="intro.js"></script> -->
+
+
+    <!-- <div>
+      <h1>Simple Dom Todo App</h1>
+      <input type="text"  id="inputfiled"/>
+      <button class="btn">Click Me</button>
+      <div class="todolist">
+
+      </div>
+    </div> -->
+
+
+
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+        width: 1340px;
+        margin: auto;
+      }
+    
+      .grid-item {
+        /* background-color: #3498db; */
+        color: white;
+        text-align: center;
+        /* padding: 20px; */
+        font-size: 1.2em;
+      }
+    
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        video.myVideo {
+    width: 100%;
+}
+.grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+      }
+      }
+
+      video.myVideo {
+    width: 100%;
+}
+    </style>
+    
+    <div class="grid-container">
+      <div class="grid-item">
+        <video autoplay muted loop class="myVideo">
+          <source src="https://cdn.shopify.com/videos/c/o/v/3f14302d199443dc9aabe0f9bcbb620b.mp4" type="video/mp4">
+        
+
+      </div>
+      <div class="grid-item">
+        <video autoplay muted loop class="myVideo">
+          <source src="https://cdn.shopify.com/videos/c/o/v/3f14302d199443dc9aabe0f9bcbb620b.mp4" type="video/mp4">
+      </div>
+      <div class="grid-item">
+        <video autoplay muted loop class="myVideo">
+          <source src="https://cdn.shopify.com/videos/c/o/v/3f14302d199443dc9aabe0f9bcbb620b.mp4" type="video/mp4">
+      </div>
+      <div class="grid-item">
+        <video autoplay muted loop class="myVideo">
+          <source src="https://cdn.shopify.com/videos/c/o/v/3f14302d199443dc9aabe0f9bcbb620b.mp4" type="video/mp4">
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+      // let inputelm = document.getElementById("inputfiled");
+      // let clickbtn = document.querySelector(".btn");
+      // let todoelm = document.querySelector(".todolist");
+
+      // let naa = () =>{
+      //   // console.log(inputelm.value);
+      //   let para = document.createElement("p");
+      //   para.textContent = inputelm.value;
+      //   todoelm.append(para);
+      //   inputelm.value = "";
+      // }
+      
+      // clickbtn.addEventListener("click" , ()=>{
+      //   naa();
+      // })
+      
+
+      let inputt = document.getElementById("inputfiled");
+      let bot = document.querySelector(".btn");
+      let todo = document.querySelector(".todolist");
+
+
+      let botttn = ()=>{
+        // console.log(inputt.value);
+
+        let heading = document.createElement("h1");
+        heading.textContent = inputt.value;
+        todo.append(heading);
+
+        inputt.value ="";
+      }
+      
+
+      bot.addEventListener("click" , ()=>{
+          botttn();
+      });
+
+
+      todo.addEventListener("click" , (event)=>{
+          console.log(event.target);
+
+          let cure = event.target;
+          cure.remove();
+          
+      });
+
+
+
+
+
+
+//       let batt = document.getElementById("btt");
+
+//       batt.addEventListener("mouseover" , ()=>{
+
+//         document.body.style.backgroundColor  = "red";
+//       });
+
+
+//       batt.addEventListener("mouseout" , ()=>{
+
+//         document.body.style.backgroundColor  = "green";
+// });
+    </script>
+  </body>
+</html>
